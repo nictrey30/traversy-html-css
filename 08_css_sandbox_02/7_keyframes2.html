@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Keyframes 2</title>
+  <style>
+    body {
+      background: #333;
+    }
+
+    /* An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. */
+    .box {
+      background: #fff;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: 0;
+      left: 0;
+      /* forwards - stays where is at when the animation ends */
+      animation: animate1 5s forwards ease-in-out 3;
+    }
+
+    @keyframes animate1 {
+      0% {
+        left: 0px;
+        top: 0px;
+        background-color: white;
+        border-radius: 50% 0 0 0;
+      }
+
+      25% {
+        left: 300px;
+        top: 0px;
+        background-color: red;
+        border-radius: 0 50% 0 0;
+      }
+
+      50% {
+        left: 300px;
+        top: 300px;
+        background-color: green;
+        border-radius: 0 0 50% 0;
+      }
+
+      75% {
+        left: 0px;
+        top: 300px;
+        background-color: blue;
+        border-radius: 0 0 0 50%;
+      }
+
+      100% {
+        left: 0px;
+        top: 0px;
+        background-color: white;
+        border-radius: 50% 0 0 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
