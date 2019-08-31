@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid Media Queries</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+    }
+    @media(max-width: 768px){
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media(max-width: 500px){
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">
+      <h3>Heading 1</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ad consequuntur officiis? Labore, nisi sed!</p>
+    </div>
+    <div class="item">
+      <h3>Heading 2</h3>
+      <p>Eos, quisquam. Recusandae nemo temporibus, non vel, itaque adipisci alias corporis dolorem cumque similique incidunt.</p>
+    </div>
+    <div class="item">
+      <h3>Heading 3</h3>
+      <p>Autem, ab iure natus recusandae cum error, sunt, exercitationem velit incidunt nisi illo atque quod!</p>
+    </div>
+    <div class="item">
+      <h3>Heading 4</h3>
+      <p>Autem, ab iure natus recusandae cum error, sunt, exercitationem velit incidunt nisi illo atque quod!</p>
+    </div>
+  </div>
+</body>
+</html>
