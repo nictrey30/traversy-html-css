@@ -240,7 +240,6 @@ h6 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
-
 #home-articles .articles-container > *:first-child,
 #home-articles .articles-container > *:last-child {
   display: grid;
@@ -249,11 +248,10 @@ h6 {
   align-items: center;
   grid-column: 1 / span 2;
 }
-
 #home-articles .articles-container > *:last-child {
   grid-column: 2 / span 2;
 }
-/*
+/* using flex */
 #article .meta {
   display: flex;
   justify-content: space-between;
@@ -263,8 +261,7 @@ h6 {
 }
 #article .meta .category {
   margin-top: 0.4rem;
-} */
-
+}
 /* Footer */
 #main-footer {
   background: var(--dark-color);
