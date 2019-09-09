@@ -1,2 +1,6 @@
 .DS_Store
 07_EdgeLedger/.DS_Store
+13_sass/scss
+13_sass/package.json
+13_sass/package-lock.json
+13_sass/node_modules
